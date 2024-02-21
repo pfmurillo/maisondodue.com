@@ -1,0 +1,32 @@
+@import './global.scss';
+
+body {
+	font-family: $base-font-family;
+	font-size: $base-font-size-desktop;
+	background-color: $base-bg-color;
+	color: $base-font-color;
+}
+
+h1 {
+	font-size: 3.8rem;
+	padding: 98px $root-horizontal-spacing 24px $root-horizontal-spacing;
+	font-weight: 900;
+	/* 	-webkit-text-stroke: 1px white;
+ */
+	color: $color-accent;
+}
+
+p {
+	line-height: 2.2rem;
+	padding: 12px $root-horizontal-spacing;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	body {
+		font-size: $base-font-size-mobile;
+	}
+
+	h1 {
+		font-size: 2.9rem;
+	}
+}
