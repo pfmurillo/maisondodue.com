@@ -128,6 +128,6 @@
 	}
 	.legal {
 		margin: 68px $root-horizontal-spacing 48px $root-horizontal-spacing;
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 </style>

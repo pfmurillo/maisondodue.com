@@ -191,7 +191,7 @@
 			max-height: 500px;
 		}
 		svg {
-			width: 34px;
+			width: 32px;
 		}
 		header.hideHeader {
 			transform: translateY(-80px);
