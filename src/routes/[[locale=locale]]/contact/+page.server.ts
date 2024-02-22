@@ -33,6 +33,6 @@ export const actions: Actions = {
 				return fail(500, { form, error });
 			}
 		})();
-		return message(form, 'Message has been sent!');
+		return message(form, 'message_sent');
 	}
 };

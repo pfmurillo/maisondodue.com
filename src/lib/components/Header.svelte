@@ -34,13 +34,15 @@
 </script>
 
 <header class:hideHeader={!showHeader && !showNav}>
-	<nav aria-label="Main Navigation">
+	<nav aria-label={$_('header.arialabel')}>
 		<a on:click={hideNav} href="/{$currentLocale}" class="home"
 			><span>maison</span><span>Dodue</span></a
 		>
 		<ul class:showNav>
-			<li><a on:click={hideNav} href="/{$currentLocale}/creations">créations</a></li>
-			<li><a on:click={hideNav} href="/{$currentLocale}/contact">contact</a></li>
+			<li>
+				<a on:click={hideNav} href="/{$currentLocale}/creations">{$_('header.navcreation')}</a>
+			</li>
+			<li><a on:click={hideNav} href="/{$currentLocale}/contact">{$_('header.navcontact')}</a></li>
 			<!-- <li>
 				<a on:click={hideNav} href="https://instagram.com/maisondodue"
 					><svg
