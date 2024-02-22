@@ -5,10 +5,10 @@
 
 <h1 class="intro" data-text={$_('home.h1')}>{$_('home.h1')}</h1>
 
-<p>{$_('home.p1')}</p>
-<p>{$_('home.p2')}</p>
-<p>{$_('home.p3')}</p>
-<p>{$_('home.p4')}</p>
+<p>{@html $_('home.p1')}</p>
+<p>{@html $_('home.p2')}</p>
+<p>{@html $_('home.p3')}</p>
+<p>{@html $_('home.p4')}</p>
 <span>Clémence</span>
 
 <CallToAction />

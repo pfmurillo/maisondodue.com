@@ -13,10 +13,16 @@
 </script>
 
 <div class="creation" use:observe={{ threshold: 0.2 }} on:enterviewport={fadeIn}>
-	{#each project.pictures as picture}
-		<div style:background-image="url({picture})"></div>
+	{#each project.pictures as picture, i}
+		<div style:background-image="url({picture})">
+			{#if i === 0}
+				<div class="description">
+					<span>{project.title}</span>
+					<p>blablalbla</p>
+				</div>
+			{/if}
+		</div>
 	{/each}
-	<div>{project.title}</div>
 </div>
 
 <style lang="scss">
@@ -27,6 +33,7 @@
 		margin: 24px $root-horizontal-spacing;
 		box-sizing: border-box;
 	}
+
 	.creation > div {
 		width: 100%;
 		aspect-ratio: 1;
@@ -35,16 +42,29 @@
 		box-sizing: border-box;
 		scale: 0.9;
 		transition: scale 0.3s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-	.creation > div:last-of-type {
+	.description {
 		display: flex;
 		flex-direction: column;
-		background-color: white;
-		padding: 24px;
 		align-items: center;
-		font-weight: bold;
-		font-size: 1.3rem;
+		justify-content: center;
+		width: 74%;
+		aspect-ratio: 1;
+		background-color: rgba($base-font-color, 0.48);
+		padding: 24px;
 		overflow: hidden;
+		color: white;
+		border: 1px solid white;
+	}
+	.description > span {
+		font-weight: bold;
+		font-size: 3.6rem;
+	}
+	.description > p {
+		font-size: 1.6rem;
 	}
 	.creation > div:hover {
 		scale: 1;

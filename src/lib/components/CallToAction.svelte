@@ -2,7 +2,7 @@
 	import { _, currentLocale } from '$lib/i18n';
 </script>
 
-<a href="/{$currentLocale}/contact">{$_('global.calltoaction')} </a>
+<a href="/{$currentLocale}/contact">{@html $_('calltoaction.a')} </a>
 
 <style lang="scss">
 	a {
@@ -10,7 +10,6 @@
 		background-color: #505060;
 		color: white;
 		border: 1px solid white;
-		box-shadow: 0px 0px 18px #50605f;
 		display: block;
 		margin: 96px auto;
 		width: fit-content;
@@ -18,10 +17,11 @@
 		padding: 18px 24px;
 		text-decoration: none;
 		border-radius: 2px;
-		transition: transform 300ms ease-in-out;
+		box-shadow: 0px 0px 8px #50605f;
+		transition: box-shadow 300ms ease-in-out;
 	}
 	a:hover {
-		transform: scale(1.03);
+		box-shadow: 0px 0px 18px #50605f;
 	}
 	@media (max-width: $breakpoint-mobile) {
 		a {

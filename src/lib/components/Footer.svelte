@@ -11,9 +11,8 @@
 		{#each availableLocales.filter((l) => l != $currentLocale) as availableLocale}
 			<li><a href="/{availableLocale}">{$_('footer.version', availableLocale)}</a></li>
 		{/each}
+		<li><a href="/{$currentLocale}/mentions">{$_('footer.mentions')}</a></li>
 		<li>tous droits réservés 2023-{new Date().getFullYear()}</li>
-		<li>mentions légales</li>
-		<li>instagram</li>
 	</ul>
 </footer>
 
