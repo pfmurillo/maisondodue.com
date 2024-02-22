@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from '$lib/i18n';
-	import Carrousel from '$lib/components/Carrousel.svelte';
+	import Creation from '$lib/components/Creation.svelte';
 	import CallToAction from '$lib/components/CallToAction.svelte';
 
 	const projects: Project[] = [
@@ -19,8 +19,8 @@
 
 <p>{$_('creations.p1')}</p>
 
-{#each projects as project, i}
-	<Carrousel {project} />
+{#each projects as project}
+	<Creation {project} />
 {/each}
 
 <CallToAction />
