@@ -4,11 +4,11 @@
 	import Footer from '$lib/components/footer.svelte';
 	import { i18n } from '$lib/i18n';
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-	let { children } = $props();
+	let { data, children } = $props();
 </script>
 
 <ParaglideJS {i18n}>
 	<Header />
-	{@render children()}
-	<Footer />
+	<main>{@render children()}</main>
+	<Footer contactForm={data.form} />
 </ParaglideJS>
