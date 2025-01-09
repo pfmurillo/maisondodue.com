@@ -19,6 +19,9 @@ export default {
 				spinach: {
 					300: '#5f6c37',
 					500: '#29361a'
+				},
+				champagne: {
+					500: '#f3dece'
 				}
 			}
 		}
