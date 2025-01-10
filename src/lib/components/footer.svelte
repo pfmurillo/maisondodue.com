@@ -28,64 +28,72 @@
 	}
 </script>
 
-<footer class="bg-brown-500 p-3 pt-12 text-white">
+<footer class="bg-brownie-500 p-3 pt-12 text-white">
 	<div class="min-w-1600 m-auto my-12 w-fit">
-		<h2 class="mb-8 text-4xl">{m.known_flat_coyote_walk()}</h2>
-		<form method="POST" enctype="multipart/form-data" action="/contact" use:enhance>
-			<label for="firstname" class="mt-3 block">{m.glad_awful_cat_laugh()}</label>
+		<h2 class="mb-8 text-5xl">{m.known_flat_coyote_walk()}</h2>
+		<form class="mb-16" method="POST" enctype="multipart/form-data" action="/contact" use:enhance>
+			<label for="firstname" class="mt-4 block text-lg font-bold"
+				>{m.glad_awful_cat_laugh()}<span class="ml-1 text-sm font-bold">*</span></label
+			>
 			<input
 				type="text"
 				name="firstname"
-				class="block text-black"
+				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
 				class:bg-red-300={$errors.firstname}
 				bind:value={$form.firstname}
 				aria-invalid={$errors.firstname ? 'true' : undefined}
 			/>
-			<label for="lastname" class="mt-3 block">{m.round_pretty_lion_swim()}</label>
+			<label for="lastname" class="mt-4 block text-lg font-bold"
+				>{m.round_pretty_lion_swim()}<span class="ml-1 text-sm font-bold">*</span></label
+			>
 			<input
 				type="text"
 				name="lastname"
-				class="block text-black"
+				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
 				class:bg-red-300={$errors.lastname}
 				bind:value={$form.lastname}
 				aria-invalid={$errors.lastname ? 'true' : undefined}
 			/>
-			<label for="email" class="mt-3 block">{m.vivid_blue_bumblebee_succeed()}</label>
+			<label for="email" class="mt-4 block text-lg font-bold"
+				>{m.vivid_blue_bumblebee_succeed()}<span class="ml-1 text-sm font-bold">*</span></label
+			>
 			<input
 				type="email"
 				name="email"
-				class="block text-black"
+				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
 				class:bg-red-300={$errors.email}
 				bind:value={$form.email}
 				aria-invalid={$errors.email ? 'true' : undefined}
 			/>
-			<label for="phone" class="mt-3 block">{m.salty_green_robin_amaze()}</label>
+			<label for="phone" class="mt-4 block text-lg font-bold"
+				>{m.salty_green_robin_amaze()}<span class="ml-1 text-sm font-bold">*</span></label
+			>
 			<input
 				type="text"
 				name="phone"
-				class="block text-black"
+				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
 				class:bg-red-300={$errors.phone}
 				bind:value={$form.phone}
 				aria-invalid={$errors.phone ? 'true' : undefined}
 			/>
-			<label for="message" class="mt-3 block">{m.odd_sweet_fireant_grace()}</label>
+			<label for="message" class="mt-4 block text-lg font-bold"
+				>{m.odd_sweet_fireant_grace()}<span class="ml-1 text-sm font-bold">*</span></label
+			>
 			<textarea
 				name="message"
 				class:bg-red-300={$errors.message}
-				class="block text-black"
+				class="block min-h-36 w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
 				bind:value={$form.message}
 				aria-invalid={$errors.message ? 'true' : undefined}
 			></textarea>
-			<label for="images" class="mt-3 block">Vos images (3 max.)</label>
+			<label for="images" class="mt-4 block text-lg font-bold">Images (3 max.)</label>
 			<div class="flex">
 				{#each $form.images as image}
 					<img
 						src={URL.createObjectURL(image)}
 						alt={image.name}
-						class="block aspect-square h-40 object-cover"
+						class="my-4 block aspect-square h-40 max-w-[33%] object-cover"
 					/>
-				{:else}
-					aucune image
 				{/each}
 			</div>
 			<button
@@ -93,8 +101,8 @@
 					e.preventDefault();
 					fileInput.click();
 				}}
-				class="flex w-fit items-center justify-center bg-slate-200 p-2 font-bold text-black"
-				>selectionner des images</button
+				class="flex w-full items-center justify-center border bg-brownie-500 py-3 text-lg font-bold text-white"
+				>Sélectionner des images</button
 			>
 			<input
 				type="file"
@@ -106,20 +114,29 @@
 				bind:files={$files}
 			/>
 			<button
-				class="mt-6 w-full bg-slate-200 p-3 font-bold text-black disabled:opacity-50"
+				class="mt-6 w-full bg-slate-200 p-3 text-lg font-bold text-black disabled:opacity-25"
 				{disabled}>{m.mellow_fine_mink_pout()}</button
 			>
+			<div class="mt-8 max-w-[400px] text-sm">
+				Conformément aux articles 38 et 40 de la loi 2004-801 du 06/08/2004, vous disposez d'un
+				droit d'accés, de rectification, de suppression des données vous concernant. Ce droit peut
+				s'exercer en adressant un courrier l'adresse suivante : Maison Dodue 4 rue Jean Varenne
+				75018 Paris
+			</div>
 		</form>
 	</div>
-	<div class="m-auto mb-12 w-fit text-center font-bold">
-		<span class="max-sm:block">2023-2025 Maison Dodue</span>
-		<span class="max-sm:block">Paris 18e</span>
-		<span class="max-sm:block"><a href="/mentions">{m.aqua_gray_penguin_peek()}</a></span>
-		<span class="max-sm:block">
+	<div class="m-auto mb-12 mt-12 w-fit text-center font-bold">
+		<span class="px-2 md:after:pl-4 md:after:content-['•'] md:max-sm:block"
+			>2023-2025 Maison Dodue</span
+		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
+			>Paris 18ème | Saint-Ouen</span
+		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
+			><a class="underline" href="/mentions">{m.aqua_gray_penguin_peek()}</a></span
+		><span class="px-2 max-sm:block">
 			{#if languageTag() === 'fr'}
-				<button onclick={() => switchToLanguage('en')}>english version</button>
+				<button class="underline" onclick={() => switchToLanguage('en')}>English version</button>
 			{:else}
-				<button onclick={() => switchToLanguage('fr')}>version française</button>
+				<button class="underline" onclick={() => switchToLanguage('fr')}>Version française</button>
 			{/if}
 		</span>
 	</div>

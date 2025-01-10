@@ -1,8 +1,8 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages.js';
 	import Hero from '$lib/components/hero.svelte';
-	import Description from '$lib/components/description.svelte';
-	import Gallery from '$lib/components/gallery.svelte';
+	import Image from '$lib/components/image.svelte';
+
 	const hero = {
 		title: m.short_formal_chipmunk_type(),
 		image: '/decor/hero.jpg'
@@ -10,15 +10,15 @@
 	const descriptions = [m.funny_glad_turtle_dash()];
 	const images = [
 		{
-			path: '/decor/IMG-20240114-WA0005.jpg',
+			path: '/decor/',
 			description: ''
 		},
 		{
-			path: '/decor/MaisonDodue_Décor_Header.png',
+			path: '/decor/.png',
 			description: ''
 		},
 		{
-			path: '/decor/MaisonDodue_Décor1.png',
+			path: '/decor/.png',
 			description: ''
 		},
 		{
@@ -29,10 +29,10 @@
 			path: '/decor/MaisonDodue_Décor3.png',
 			description: ''
 		},
-		{
+		/* {
 			path: '/decor/MaisonDodue_Décor4.png',
 			description: ''
-		},
+		}, */
 		{
 			path: '/decor/MaisonDodue_Décor5.png',
 			description: ''
@@ -45,5 +45,19 @@
 </script>
 
 <Hero {hero} />
-<Description {descriptions} />
-<Gallery {images} />
+
+<div class="m-auto mb-14 mt-7 grid max-w-screen-lg grid-cols-2 gap-4 p-3 md:grid-cols-3">
+	<div><Image src="/decor/MaisonDodue_Décor3.png" alt="" /></div>
+	<div><Image src="/decor/MaisonDodue_Rideaux.jpg" alt="" /></div>
+	<div><Image src="/decor/MaisonDodue_Décor1.png" alt="" /></div>
+	<div><Image src="/decor/MaisonDodue_Décor2.png" alt="" /></div>
+	<div><Image src="/decor/MaisonDodue_Décor5.png" alt="" /></div>
+	<div
+		class="col-start-1 col-end-3 row-start-2 row-end-3 flex items-center rounded-3xl bg-spinach-300 p-6 text-lg leading-8 text-white md:p-12"
+	>
+		Maison Dodue c’est aussi un lieu qui habille vos fenêtres (rideaux, voilages, stores), vos têtes
+		de lit et garnit vos canapés des coussins qui vous donnent envie. Discutons-en et choisissons
+		ensemble des tissus d’ameublement les plus adaptés.
+	</div>
+	<div><Image src="/decor/IMG-20240114-WA0005.jpg" alt="" /></div>
+</div>

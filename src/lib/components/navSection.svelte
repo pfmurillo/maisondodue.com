@@ -17,12 +17,14 @@
 {:else if sectionDetails}
 	<a
 		href={sectionDetails.path}
-		class="relative after:absolute after:top-0 after:h-full after:w-full after:rounded-3xl after:bg-vintage"
+		class="relative min-h-12 w-full md:aspect-square md:after:absolute md:after:top-0 md:after:h-full md:after:w-full md:after:rounded-3xl md:after:bg-vintage"
 		><div
 			style:background-image="url({sectionDetails.image})"
-			class="flex aspect-square w-72 items-center justify-center rounded-3xl bg-cover"
-		>
-			<span class="z-30 font-serif text-5xl font-normal text-white">{sectionDetails.name}</span>
-		</div></a
+			class="absolute top-0 aspect-square w-full rounded-3xl bg-cover max-sm:hidden"
+		></div>
+		<span
+			class="absolute top-0 z-30 flex w-full items-center justify-center font-serif text-5xl font-normal text-spinach-500 md:aspect-square md:text-white"
+			>{sectionDetails.name}</span
+		></a
 	>
 {/if}

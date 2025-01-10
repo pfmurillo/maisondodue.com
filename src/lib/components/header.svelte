@@ -18,7 +18,7 @@
 			image: '/header/nav_decor.jpg'
 		},
 		{
-			name: 'Jugaad !',
+			name: 'Jugaad!',
 			path: 'jugaad',
 			image: '/header/nav_jugaad.jpg'
 		}
@@ -133,10 +133,10 @@
 	{#if showNav}
 		<nav transition:slide class="fixed z-20 w-full bg-white shadow-lg">
 			<ul
-				class="m-auto mb-12 mt-8 flex w-full flex-col gap-4 md:max-w-[50%] md:flex-row md:place-content-evenly"
+				class="m-auto mt-8 flex w-full flex-col gap-4 p-3 md:mb-16 md:max-w-screen-lg md:flex-row md:place-content-evenly"
 			>
 				{#each navSections as sectionDetails}
-					<li class="flex items-center justify-center">
+					<li class="flex w-full items-center justify-center">
 						<NavSection {sectionDetails} />
 					</li>
 				{/each}

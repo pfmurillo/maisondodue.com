@@ -9,6 +9,6 @@
 
 <ParaglideJS {i18n}>
 	<Header />
-	<main>{@render children()}</main>
+	<main class="bg-champagne-300 pb-12">{@render children()}</main>
 	<Footer contactForm={data.form} />
 </ParaglideJS>
