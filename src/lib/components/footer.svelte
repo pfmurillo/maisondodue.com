@@ -102,7 +102,7 @@
 					fileInput.click();
 				}}
 				class="flex w-full items-center justify-center border bg-white py-3 text-lg font-bold text-black"
-				>Sélectionner des images</button
+				>{m.tasty_many_ladybug_learn()}</button
 			>
 			<input
 				type="file"
