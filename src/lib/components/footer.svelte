@@ -30,9 +30,9 @@
 
 <footer class="bg-spinach-300 p-3 pt-12 text-white">
 	<div class="min-w-1600 m-auto my-12 w-fit">
-		<h2 class="mb-8 text-5xl">{m.known_flat_coyote_walk()}</h2>
+		<h2 class="mb-8 text-4xl">{m.known_flat_coyote_walk()}</h2>
 		<form class="mb-16" method="POST" enctype="multipart/form-data" action="/contact" use:enhance>
-			<label for="firstname" class="mt-4 block text-lg font-bold"
+			<label for="firstname" class="mt-4 block font-bold"
 				>{m.glad_awful_cat_laugh()}<span class="ml-1 text-sm font-bold">*</span></label
 			>
 			<input
@@ -43,7 +43,7 @@
 				bind:value={$form.firstname}
 				aria-invalid={$errors.firstname ? 'true' : undefined}
 			/>
-			<label for="lastname" class="mt-4 block text-lg font-bold"
+			<label for="lastname" class="mt-4 block font-bold"
 				>{m.round_pretty_lion_swim()}<span class="ml-1 text-sm font-bold">*</span></label
 			>
 			<input
@@ -54,7 +54,7 @@
 				bind:value={$form.lastname}
 				aria-invalid={$errors.lastname ? 'true' : undefined}
 			/>
-			<label for="email" class="mt-4 block text-lg font-bold"
+			<label for="email" class="mt-4 block font-bold"
 				>{m.vivid_blue_bumblebee_succeed()}<span class="ml-1 text-sm font-bold">*</span></label
 			>
 			<input
@@ -65,7 +65,7 @@
 				bind:value={$form.email}
 				aria-invalid={$errors.email ? 'true' : undefined}
 			/>
-			<label for="phone" class="mt-4 block text-lg font-bold"
+			<label for="phone" class="mt-4 block font-bold"
 				>{m.salty_green_robin_amaze()}<span class="ml-1 text-sm font-bold">*</span></label
 			>
 			<input
@@ -76,7 +76,7 @@
 				bind:value={$form.phone}
 				aria-invalid={$errors.phone ? 'true' : undefined}
 			/>
-			<label for="message" class="mt-4 block text-lg font-bold"
+			<label for="message" class="mt-4 block font-bold"
 				>{m.odd_sweet_fireant_grace()}<span class="ml-1 text-sm font-bold">*</span></label
 			>
 			<textarea
@@ -86,7 +86,7 @@
 				bind:value={$form.message}
 				aria-invalid={$errors.message ? 'true' : undefined}
 			></textarea>
-			<label for="images" class="mt-4 block text-lg font-bold">Images (3 max.)</label>
+			<label for="images" class="mt-4 block font-bold">Images (3 max.)</label>
 			<div class="flex">
 				{#each $form.images as image}
 					<img
