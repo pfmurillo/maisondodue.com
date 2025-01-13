@@ -15,9 +15,7 @@
 	<div
 		class="col-start-1 col-end-3 row-start-2 row-end-3 flex items-center rounded-3xl bg-moka-500 p-6 leading-8 text-white md:p-12"
 	>
-		Maison Dodue c’est aussi un lieu qui habille vos fenêtres (rideaux, voilages, stores), vos têtes
-		de lit et garnit vos canapés des coussins qui vous donnent envie. Discutons-en et choisissons
-		ensemble des tissus d’ameublement les plus adaptés.
+		{m.fit_less_wallaby_trust()}
 	</div>
 	<div><Image src="/decor/06.webp" alt="" /></div>
 </div>
