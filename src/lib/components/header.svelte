@@ -74,7 +74,7 @@
 </script>
 
 <header
-	class="fixed top-0 z-40 w-full text-lg font-bold text-white shadow-md transition-all"
+	class="fixed top-0 z-40 w-full text-lg text-white shadow-md transition-all"
 	class:bg-white={solidBackground}
 >
 	<ul

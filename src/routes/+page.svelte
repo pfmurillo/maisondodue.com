@@ -18,7 +18,7 @@
 		<h1 class="z-10 mb-8 font-serif text-5xl md:text-7xl">
 			{m.helpful_cuddly_vulture_ask()}
 		</h1>
-		<p class="z-10 mb-6 text-lg font-bold">
+		<p class="z-10 mb-6 text-lg">
 			<span class="inline md:block">{m.maroon_misty_crocodile_boil()}</span>
 			<span class="inline md:block">{m.free_muddy_trout_amaze()}</span>
 			<span class="inline md:block">{m.lime_livid_insect_swim()}</span>

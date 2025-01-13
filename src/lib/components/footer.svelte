@@ -32,8 +32,8 @@
 	<div class="min-w-1600 m-auto my-12 w-fit">
 		<h2 class="mb-8 text-4xl">{m.known_flat_coyote_walk()}</h2>
 		<form class="mb-16" method="POST" enctype="multipart/form-data" action="/contact" use:enhance>
-			<label for="firstname" class="mt-4 block font-bold"
-				>{m.glad_awful_cat_laugh()}<span class="ml-1 text-sm font-bold">*</span></label
+			<label for="firstname" class="mt-4 block"
+				>{m.glad_awful_cat_laugh()}<span class="ml-1 text-sm">*</span></label
 			>
 			<input
 				type="text"
@@ -43,8 +43,8 @@
 				bind:value={$form.firstname}
 				aria-invalid={$errors.firstname ? 'true' : undefined}
 			/>
-			<label for="lastname" class="mt-4 block font-bold"
-				>{m.round_pretty_lion_swim()}<span class="ml-1 text-sm font-bold">*</span></label
+			<label for="lastname" class="mt-4 block"
+				>{m.round_pretty_lion_swim()}<span class="ml-1 text-sm">*</span></label
 			>
 			<input
 				type="text"
@@ -54,8 +54,8 @@
 				bind:value={$form.lastname}
 				aria-invalid={$errors.lastname ? 'true' : undefined}
 			/>
-			<label for="email" class="mt-4 block font-bold"
-				>{m.vivid_blue_bumblebee_succeed()}<span class="ml-1 text-sm font-bold">*</span></label
+			<label for="email" class="mt-4 block"
+				>{m.vivid_blue_bumblebee_succeed()}<span class="ml-1 text-sm">*</span></label
 			>
 			<input
 				type="email"
@@ -65,8 +65,8 @@
 				bind:value={$form.email}
 				aria-invalid={$errors.email ? 'true' : undefined}
 			/>
-			<label for="phone" class="mt-4 block font-bold"
-				>{m.salty_green_robin_amaze()}<span class="ml-1 text-sm font-bold">*</span></label
+			<label for="phone" class="mt-4 block"
+				>{m.salty_green_robin_amaze()}<span class="ml-1 text-sm">*</span></label
 			>
 			<input
 				type="text"
@@ -76,8 +76,8 @@
 				bind:value={$form.phone}
 				aria-invalid={$errors.phone ? 'true' : undefined}
 			/>
-			<label for="message" class="mt-4 block font-bold"
-				>{m.odd_sweet_fireant_grace()}<span class="ml-1 text-sm font-bold">*</span></label
+			<label for="message" class="mt-4 block"
+				>{m.odd_sweet_fireant_grace()}<span class="ml-1 text-sm">*</span></label
 			>
 			<textarea
 				name="message"
@@ -86,7 +86,7 @@
 				bind:value={$form.message}
 				aria-invalid={$errors.message ? 'true' : undefined}
 			></textarea>
-			<label for="images" class="mt-4 block font-bold">Images (3 max.)</label>
+			<label for="images" class="mt-4 block">Images (3 max.)</label>
 			<div class="flex">
 				{#each $form.images as image}
 					<img
@@ -101,7 +101,7 @@
 					e.preventDefault();
 					fileInput.click();
 				}}
-				class="flex w-full items-center justify-center border bg-white py-3 font-bold text-black"
+				class="flex w-full items-center justify-center border bg-white py-3 text-black"
 				>{m.tasty_many_ladybug_learn()}</button
 			>
 			<input
@@ -113,7 +113,7 @@
 				bind:this={fileInput}
 				bind:files={$files}
 			/>
-			<button class="mt-6 w-full bg-white p-3 font-bold text-black disabled:opacity-35" {disabled}
+			<button class="mt-6 w-full bg-white p-3 text-black disabled:opacity-35" {disabled}
 				>{m.mellow_fine_mink_pout()}</button
 			>
 			<div class="mt-8 max-w-[400px] text-sm">
@@ -124,7 +124,7 @@
 			</div>
 		</form>
 	</div>
-	<div class="m-auto mb-12 mt-12 w-fit text-center font-bold">
+	<div class="m-auto mb-12 mt-12 w-fit text-center">
 		<span class="px-2 md:after:pl-4 md:after:content-['•'] md:max-sm:block"
 			>2023-2025 Maison Dodue</span
 		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
