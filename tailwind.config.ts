@@ -24,7 +24,7 @@ export default {
 					300: '#ddb892'
 				},
 				champagne: {
-					300: '#fefae0'
+					300: '#fefafc'
 				},
 				cassis: {
 					500: '#cf4f4f'
