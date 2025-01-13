@@ -8,10 +8,10 @@
 
 <div class="m-auto mb-14 mt-7 grid max-w-screen-lg grid-cols-2 gap-4 p-3 md:grid-cols-3">
 	<div>
-		<Image src="/sieges/MaisonDodue_Sièges_1.png" alt="" />
+		<Image src="/sieges/01.webp" alt="" />
 	</div>
 	<div
-		class="bg-moka-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-moka-500 p-6 text-lg leading-8 text-white md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
 	>
 		Selon votre fauteuil et vos envies, Maison Dodue restaure vos assises en crin ou en mousse. Je
 		me ferai un plaisir de vous proposer des matières premières responsables, de dénicher pour vous
@@ -19,21 +19,21 @@
 		grâce à des partenaires de l’économie circulaire.
 	</div>
 	<div class="col-start-2 col-end-3 row-start-1 row-end-2 md:col-start-1 md:col-end-2">
-		<Image src="/sieges/MaisonDodue_Sièges_2.png" alt="" />
+		<Image src="/sieges/02.webp" alt="" />
 	</div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_3.png" alt="" /></div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_4.png" alt="" /></div>
+	<div><Image src="/sieges/03.webp" alt="" /></div>
+	<div><Image src="/sieges/04.webp" alt="" /></div>
 	<div
-		class="bg-curry-300 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-curry-300 p-6 text-lg leading-8 text-white md:p-12"
 	>
 		Maison Dodue fera également le maximum pour travailler avec des ressourceries, pour donner une
 		seconde vie à certaines fournitures et veillera au meilleur recyclage possible des déchets.
 		Penser circulaire pourrait bien être une clé du succès, non ?
 	</div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_5.png" alt="" /></div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_6.png" alt="" /></div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_7.png" alt="" /></div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_8.png" alt="" /></div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_9.png" alt="" /></div>
-	<div><Image src="/sieges/MaisonDodue_Sièges_10.png" alt="" /></div>
+	<div><Image src="/sieges/05.webp" alt="" /></div>
+	<div><Image src="/sieges/06.webp" alt="" /></div>
+	<div><Image src="/sieges/07.webp" alt="" /></div>
+	<div><Image src="/sieges/08.webp" alt="" /></div>
+	<div><Image src="/sieges/09.webp" alt="" /></div>
+	<div><Image src="/sieges/10.webp" alt="" /></div>
 </div>
