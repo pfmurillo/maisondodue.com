@@ -9,7 +9,7 @@ export default {
 		},
 		extend: {
 			backgroundImage: {
-				vintage: 'radial-gradient(#f3dece00, #20101090);'
+				vintage: 'radial-gradient(#f3dece00, #20101040);'
 			},
 			colors: {
 				curry: {
