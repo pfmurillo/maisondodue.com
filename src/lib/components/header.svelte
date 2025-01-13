@@ -10,17 +10,17 @@
 		{
 			name: 'Sièges',
 			path: 'sieges',
-			image: '/header/nav_sieges.jpg'
+			image: '/header/sieges.webp'
 		},
 		{
 			name: 'Décor',
 			path: 'decor',
-			image: '/header/nav_decor.jpg'
+			image: '/header/decor.webp'
 		},
 		{
 			name: 'Jugaad!',
 			path: 'jugaad',
-			image: '/header/nav_jugaad.jpg'
+			image: '/header/jugaad.webp'
 		}
 	];
 
