@@ -4,7 +4,7 @@
 	import NavSection from './navSection.svelte';
 	import { afterNavigate } from '$app/navigation';
 	import * as m from '$lib/paraglide/messages.js';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	const navSections = [
 		{
@@ -53,7 +53,7 @@
 	}
 
 	$effect(() => {
-		solidBackground = $page.route.id != '/' || scrollY > 140 || showNav ? true : false;
+		solidBackground = page.route.id != '/' || scrollY > 140 || showNav;
 	});
 
 	onMount(() => {
