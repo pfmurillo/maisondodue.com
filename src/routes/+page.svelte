@@ -11,10 +11,10 @@
 </script>
 
 <div
-	style:background-image="url(/home/hero.jpg)"
+	style:background-image="url(/home/hero.webp)"
 	class="relative flex h-[70vh] w-full flex-col justify-center bg-cover bg-center text-white after:absolute after:h-full after:w-full after:bg-vintage"
 >
-	<div class="z-10 m-auto max-w-screen-lg p-3">
+	<div class="z-10 m-auto max-w-screen-lg p-3 md:min-w-[1024px]">
 		<h1 class="z-10 mb-8 font-serif text-5xl md:text-7xl">
 			{m.helpful_cuddly_vulture_ask()}
 		</h1>
