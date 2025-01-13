@@ -12,21 +12,22 @@ export default {
 				vintage: 'radial-gradient(#f3dece00, #20101090);'
 			},
 			colors: {
-				brownie: {
-					500: '#c98548',
-					300: '#dda15e'
+				curry: {
+					300: '#f08700'
 				},
 				spinach: {
 					500: '#30351c',
 					300: '#828c51'
 				},
+				moka: {
+					500: '#a57865',
+					300: '#ddb892'
+				},
 				champagne: {
-					500: '#f3dece',
 					300: '#fefae0'
 				},
 				cassis: {
-					500: '#cf4f4f',
-					300: '#c6766b'
+					500: '#cf4f4f'
 				}
 			}
 		}

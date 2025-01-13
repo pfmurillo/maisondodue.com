@@ -15,7 +15,7 @@
 		<Image src="/sieges/MaisonDodue_Sièges_1.png" alt="" />
 	</div>
 	<div
-		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-champagne-500 p-6 text-lg leading-8 md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
+		class="bg-moka-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
 	>
 		Selon votre fauteuil et vos envies, Maison Dodue restaure vos assises en crin ou en mousse. Je
 		me ferai un plaisir de vous proposer des matières premières responsables, de dénicher pour vous
@@ -28,7 +28,7 @@
 	<div><Image src="/sieges/MaisonDodue_Sièges_3.png" alt="" /></div>
 	<div><Image src="/sieges/MaisonDodue_Sièges_4.png" alt="" /></div>
 	<div
-		class="bg-brownie-300 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:p-12"
+		class="bg-curry-300 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:p-12"
 	>
 		Maison Dodue fera également le maximum pour travailler avec des ressourceries, pour donner une
 		seconde vie à certaines fournitures et veillera au meilleur recyclage possible des déchets.

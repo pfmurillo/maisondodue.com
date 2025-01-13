@@ -19,7 +19,7 @@
 
 <div class="m-auto mb-14 mt-7 grid max-w-screen-lg grid-cols-2 gap-4 p-3 md:grid-cols-3">
 	<div
-		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-champagne-500 p-6 text-lg leading-8 md:col-start-1 md:col-end-4 md:p-12"
+		class="bg-moka-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:col-start-1 md:col-end-4 md:p-12"
 	>
 		Jugaad qui signifierait « faire plus avec moins » en hindi ou comment d’une bidouille, d’une
 		idée peut naître quelque chose d’ingénieux. Jugaad ou comment quelque chose sans valeur aux yeux
@@ -37,7 +37,7 @@
 		<Image src="/jugaad/b0b47710-4fe2-496e-8776-58cf162c28e9.png" alt="" />
 	</div>
 	<div
-		class="bg-brownie-300 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-spinach-300 p-6 text-lg leading-8 text-white md:p-12"
 	>
 		Certains parlent « d’ingéniosité frugale ». Jugaad en tant que tapissier qui fait son maximum
 		pour avoir une pratique raisonnée de son métier, c’est la possibilité de dire oui à la
@@ -50,14 +50,14 @@
 		<Image src="/jugaad/IMG_20240523_105511.jpg" alt="" />
 	</div>
 	<div
-		class="bg-cassis-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:col-start-2 md:col-end-4 md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-cassis-500 p-6 text-lg leading-8 text-white md:col-start-2 md:col-end-4 md:p-12"
 	>
 		Un canevas encadré transformé en dossier de médaillon puis finalement en coussin, une passion
 		pour la toile forte et l’envie d’en faire le « tissu » final avec une finition cloutée,
 		restaurer une petite chaise chinée avec un tissu issu d’un stock dormant…
 	</div>
 	<div
-		class="col-start-1 col-end-3 row-start-8 row-end-9 flex items-center rounded-3xl bg-spinach-300 p-6 text-lg leading-8 text-white md:col-start-1 md:col-end-2 md:row-start-5 md:row-end-6 md:p-12"
+		class="bg-curry-300 col-start-1 col-end-3 row-start-8 row-end-9 flex items-center rounded-3xl p-6 text-lg leading-8 text-white md:col-start-1 md:col-end-2 md:row-start-5 md:row-end-6 md:p-12"
 	>
 		Maison Dodue fera son maximum pour réaliser votre envie, contactez-moi pour en discuter !
 	</div>

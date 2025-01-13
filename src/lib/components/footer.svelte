@@ -28,7 +28,7 @@
 	}
 </script>
 
-<footer class="bg-brownie-500 p-3 pt-12 text-white">
+<footer class="bg-spinach-300 p-3 pt-12 text-white">
 	<div class="min-w-1600 m-auto my-12 w-fit">
 		<h2 class="mb-8 text-5xl">{m.known_flat_coyote_walk()}</h2>
 		<form class="mb-16" method="POST" enctype="multipart/form-data" action="/contact" use:enhance>
@@ -38,7 +38,7 @@
 			<input
 				type="text"
 				name="firstname"
-				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
+				class="block w-full border bg-white px-4 py-2 text-xl text-black"
 				class:bg-red-300={$errors.firstname}
 				bind:value={$form.firstname}
 				aria-invalid={$errors.firstname ? 'true' : undefined}
@@ -49,7 +49,7 @@
 			<input
 				type="text"
 				name="lastname"
-				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
+				class="block w-full border bg-white px-4 py-2 text-xl text-black"
 				class:bg-red-300={$errors.lastname}
 				bind:value={$form.lastname}
 				aria-invalid={$errors.lastname ? 'true' : undefined}
@@ -60,7 +60,7 @@
 			<input
 				type="email"
 				name="email"
-				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
+				class="block w-full border bg-white px-4 py-2 text-xl text-black"
 				class:bg-red-300={$errors.email}
 				bind:value={$form.email}
 				aria-invalid={$errors.email ? 'true' : undefined}
@@ -71,7 +71,7 @@
 			<input
 				type="text"
 				name="phone"
-				class="block w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
+				class="block w-full border bg-white px-4 py-2 text-xl text-black"
 				class:bg-red-300={$errors.phone}
 				bind:value={$form.phone}
 				aria-invalid={$errors.phone ? 'true' : undefined}
@@ -82,7 +82,7 @@
 			<textarea
 				name="message"
 				class:bg-red-300={$errors.message}
-				class="block min-h-36 w-full border bg-brownie-500 px-4 py-2 text-xl text-white"
+				class="block min-h-36 w-full border bg-white px-4 py-2 text-xl text-black"
 				bind:value={$form.message}
 				aria-invalid={$errors.message ? 'true' : undefined}
 			></textarea>
@@ -101,7 +101,7 @@
 					e.preventDefault();
 					fileInput.click();
 				}}
-				class="flex w-full items-center justify-center border bg-brownie-500 py-3 text-lg font-bold text-white"
+				class="flex w-full items-center justify-center border bg-white py-3 text-lg font-bold text-black"
 				>Sélectionner des images</button
 			>
 			<input
@@ -114,7 +114,7 @@
 				bind:files={$files}
 			/>
 			<button
-				class="mt-6 w-full bg-slate-200 p-3 text-lg font-bold text-black disabled:opacity-25"
+				class="mt-6 w-full bg-white p-3 text-lg font-bold text-black disabled:opacity-35"
 				{disabled}>{m.mellow_fine_mink_pout()}</button
 			>
 			<div class="mt-8 max-w-[400px] text-sm">
