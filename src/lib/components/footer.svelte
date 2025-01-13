@@ -38,7 +38,7 @@
 			<input
 				type="text"
 				name="firstname"
-				class="block w-full border bg-white px-4 py-2 text-xl text-black"
+				class="block w-full border bg-white px-4 py-2 text-black"
 				class:bg-red-300={$errors.firstname}
 				bind:value={$form.firstname}
 				aria-invalid={$errors.firstname ? 'true' : undefined}
@@ -49,7 +49,7 @@
 			<input
 				type="text"
 				name="lastname"
-				class="block w-full border bg-white px-4 py-2 text-xl text-black"
+				class="block w-full border bg-white px-4 py-2 text-black"
 				class:bg-red-300={$errors.lastname}
 				bind:value={$form.lastname}
 				aria-invalid={$errors.lastname ? 'true' : undefined}
@@ -60,7 +60,7 @@
 			<input
 				type="email"
 				name="email"
-				class="block w-full border bg-white px-4 py-2 text-xl text-black"
+				class="block w-full border bg-white px-4 py-2 text-black"
 				class:bg-red-300={$errors.email}
 				bind:value={$form.email}
 				aria-invalid={$errors.email ? 'true' : undefined}
@@ -71,7 +71,7 @@
 			<input
 				type="text"
 				name="phone"
-				class="block w-full border bg-white px-4 py-2 text-xl text-black"
+				class="block w-full border bg-white px-4 py-2 text-black"
 				class:bg-red-300={$errors.phone}
 				bind:value={$form.phone}
 				aria-invalid={$errors.phone ? 'true' : undefined}
@@ -82,7 +82,7 @@
 			<textarea
 				name="message"
 				class:bg-red-300={$errors.message}
-				class="block min-h-36 w-full border bg-white px-4 py-2 text-xl text-black"
+				class="block min-h-36 w-full border bg-white px-4 py-2 text-black"
 				bind:value={$form.message}
 				aria-invalid={$errors.message ? 'true' : undefined}
 			></textarea>
@@ -101,7 +101,7 @@
 					e.preventDefault();
 					fileInput.click();
 				}}
-				class="flex w-full items-center justify-center border bg-white py-3 text-lg font-bold text-black"
+				class="flex w-full items-center justify-center border bg-white py-3 font-bold text-black"
 				>{m.tasty_many_ladybug_learn()}</button
 			>
 			<input
@@ -113,9 +113,8 @@
 				bind:this={fileInput}
 				bind:files={$files}
 			/>
-			<button
-				class="mt-6 w-full bg-white p-3 text-lg font-bold text-black disabled:opacity-35"
-				{disabled}>{m.mellow_fine_mink_pout()}</button
+			<button class="mt-6 w-full bg-white p-3 font-bold text-black disabled:opacity-35" {disabled}
+				>{m.mellow_fine_mink_pout()}</button
 			>
 			<div class="mt-8 max-w-[400px] text-sm">
 				Conformément aux articles 38 et 40 de la loi 2004-801 du 06/08/2004, vous disposez d'un

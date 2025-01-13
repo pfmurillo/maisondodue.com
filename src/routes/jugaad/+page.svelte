@@ -8,7 +8,7 @@
 
 <div class="m-auto mb-14 mt-7 grid max-w-screen-lg grid-cols-2 gap-4 p-3 md:grid-cols-3">
 	<div
-		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-moka-500 p-6 text-lg leading-8 text-white md:col-start-1 md:col-end-4 md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-moka-500 p-6 leading-8 text-white md:col-start-1 md:col-end-4 md:p-12"
 	>
 		{m.early_keen_gecko_pet()}
 	</div>
@@ -22,7 +22,7 @@
 		<Image src="/jugaad/03.webp" alt="" />
 	</div>
 	<div
-		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-spinach-300 p-6 text-lg leading-8 text-white md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-spinach-300 p-6 leading-8 text-white md:p-12"
 	>
 		{m.gaudy_less_cod_bloom()}
 	</div>
@@ -33,12 +33,12 @@
 		<Image src="/jugaad/05.webp" alt="" />
 	</div>
 	<div
-		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-cassis-500 p-6 text-lg leading-8 text-white md:col-start-2 md:col-end-4 md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-cassis-500 p-6 leading-8 text-white md:col-start-2 md:col-end-4 md:p-12"
 	>
 		{m.lazy_raw_squid_dial()}
 	</div>
 	<div
-		class="col-start-1 col-end-3 row-start-8 row-end-9 flex items-center rounded-3xl bg-curry-300 p-6 text-lg leading-8 text-white md:col-start-1 md:col-end-2 md:row-start-5 md:row-end-6 md:p-12"
+		class="col-start-1 col-end-3 row-start-8 row-end-9 flex items-center rounded-3xl bg-curry-300 p-6 leading-8 text-white md:col-start-1 md:col-end-2 md:row-start-5 md:row-end-6 md:p-12"
 	>
 		{m.icy_fun_rook_rush()}
 	</div>
