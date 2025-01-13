@@ -8,12 +8,12 @@
 
 	const navSections = [
 		{
-			name: 'Sièges',
+			name: m.flat_spare_seal_launch(),
 			path: 'sieges',
 			image: '/header/sieges.webp'
 		},
 		{
-			name: 'Décor',
+			name: m.this_crazy_grizzly_explore(),
 			path: 'decor',
 			image: '/header/decor.webp'
 		},
