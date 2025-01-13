@@ -1,10 +1,5 @@
 <script lang="ts">
-	interface Hero {
-		title: string;
-		image: string;
-	}
-	const { hero }: { hero: Hero } = $props();
-	const { title, image } = hero;
+	const { title }: { title: string } = $props();
 </script>
 
 <div class="m-auto max-w-screen-lg p-3 pt-16 md:pt-24">

@@ -2,13 +2,9 @@
 	import * as m from '$lib/paraglide/messages.js';
 	import Hero from '$lib/components/hero.svelte';
 	import Image from '$lib/components/image.svelte';
-	const hero = {
-		title: m.yummy_basic_gull_view(),
-		image: ''
-	};
 </script>
 
-<Hero {hero} />
+<Hero title="Sièges" />
 
 <div class="m-auto mb-14 mt-7 grid max-w-screen-lg grid-cols-2 gap-4 p-3 md:grid-cols-3">
 	<div>

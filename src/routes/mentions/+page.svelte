@@ -2,10 +2,7 @@
 	import Description from '$lib/components/description.svelte';
 	import * as m from '$lib/paraglide/messages.js';
 	import Hero from '$lib/components/hero.svelte';
-	const hero = {
-		title: 'Mentions légales',
-		image: ''
-	};
+
 	const descriptions = [
 		'Identité de l’entreprise : Maison Dodue, Entreprise individuelle dont l’atelier est situé au 4 rue Jean Varennes, 75018 Paris, France.',
 		'Numéro de SIREN : 827 961 343',
@@ -17,5 +14,5 @@
 	];
 </script>
 
-<Hero {hero} />
+<Hero title={m.round_tiny_llama_gasp()} />
 <Description {descriptions} />
