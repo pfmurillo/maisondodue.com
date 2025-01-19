@@ -12,8 +12,9 @@
 	</div>
 	<div
 		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-moka-500 p-6 leading-8 text-white md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
-	></div>
-	{m.slimy_wise_grebe_gasp()}
+	>
+		{m.slimy_wise_grebe_gasp()}
+	</div>
 	<div class="col-start-2 col-end-3 row-start-1 row-end-2 md:col-start-1 md:col-end-2">
 		<Image src="/sieges/02.webp" alt="" />
 	</div>
