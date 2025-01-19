@@ -28,6 +28,9 @@ export default {
 				},
 				cassis: {
 					500: '#cf4f4f'
+				},
+				almond: {
+					500: '#d5bdaf'
 				}
 			}
 		}

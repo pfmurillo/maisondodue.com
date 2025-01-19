@@ -13,7 +13,7 @@
 	<div><Image src="/decor/04.webp" alt="" /></div>
 	<div><Image src="/decor/05.webp" alt="" /></div>
 	<div
-		class="col-start-1 col-end-3 row-start-2 row-end-3 flex items-center rounded-3xl bg-moka-500 p-6 leading-8 text-white md:p-12"
+		class="bg-almond-500 col-start-1 col-end-3 row-start-2 row-end-3 flex items-center rounded-3xl p-6 leading-8 text-black md:p-12"
 	>
 		{m.fit_less_wallaby_trust()}
 	</div>

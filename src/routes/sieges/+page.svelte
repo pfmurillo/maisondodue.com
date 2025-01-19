@@ -11,7 +11,7 @@
 		<Image src="/sieges/01.webp" alt="" />
 	</div>
 	<div
-		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-moka-500 p-6 leading-8 text-white md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
+		class="bg-almond-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 leading-8 text-black md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
 	>
 		{m.slimy_wise_grebe_gasp()}
 	</div>
@@ -21,7 +21,7 @@
 	<div><Image src="/sieges/03.webp" alt="" /></div>
 	<div><Image src="/sieges/04.webp" alt="" /></div>
 	<div
-		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-curry-300 p-6 leading-8 text-white md:p-12"
+		class="bg-almond-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 leading-8 text-black md:p-12"
 	>
 		{m.key_patchy_dingo_link()}
 	</div>
