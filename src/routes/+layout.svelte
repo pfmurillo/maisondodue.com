@@ -7,26 +7,11 @@
 	let { data, children } = $props();
 	import { page } from '$app/state';
 	import * as m from '$lib/paraglide/messages.js';
-
-	/* let title = $derived.by(() => {
-		switch (page.route.id) {
-			case '/sieges':
-				return m.lost_heavy_mammoth_zap();
-				break;
-			case '/decor':
-				return m.awake_key_pelican_mix();
-				break;
-			case '/jugaad':
-				return 'Jugaad!';
-				break;
-			default:
-				return m.real_many_rat_dig();
-				break;
-		}
-	}); */
+	import { afterNavigate } from '$app/navigation';
 
 	let title: string = $state('');
-	$effect(() => {
+
+	afterNavigate(() => {
 		switch (page.route.id) {
 			case '/sieges':
 				title = m.lost_heavy_mammoth_zap();
