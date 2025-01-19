@@ -4,7 +4,7 @@
 	import Hero from '$lib/components/hero.svelte';
 
 	const descriptions = [
-		'Identité de l’entreprise : Maison Dodue, Entreprise individuelle dont l’atelier est situé au 4 rue Jean Varennes, 75018 Paris, France.',
+		'Identité de l’entreprise : Maison Dodue, Entreprise individuelle dont l’atelier est situé au 20 Rue Dieumegard, 93400 Saint-Ouen-sur-Seine, France.',
 		'Numéro de SIREN : 827 961 343',
 		'Email : contact@maisondodue.com',
 		'Téléphone : 0782732526',
