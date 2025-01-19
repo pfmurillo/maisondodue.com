@@ -38,7 +38,7 @@
 		{m.lazy_raw_squid_dial()}
 	</div> -->
 	<div
-		class="bg-almond-500 col-start-1 col-end-3 row-start-8 row-end-9 flex items-center rounded-3xl p-6 leading-8 text-black md:col-start-1 md:col-end-2 md:row-start-5 md:row-end-6 md:p-12"
+		class="bg-almond-500 col-start-1 col-end-3 row-start-7 row-end-8 flex items-center rounded-3xl p-6 leading-8 text-black md:col-start-1 md:col-end-2 md:row-start-5 md:row-end-6 md:p-12"
 	>
 		{m.icy_fun_rook_rush()}
 	</div>
