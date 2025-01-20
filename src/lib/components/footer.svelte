@@ -117,10 +117,7 @@
 				>{m.mellow_fine_mink_pout()}</button
 			>
 			<div class="mt-8 max-w-[400px] text-sm">
-				Conformément aux articles 38 et 40 de la loi 2004-801 du 06/08/2004, vous disposez d'un
-				droit d'accés, de rectification, de suppression des données vous concernant. Ce droit peut
-				s'exercer en adressant un courrier l'adresse suivante : Maison Dodue 4 rue Jean Varenne
-				75018 Paris
+				{m.spry_stock_newt_link()}
 			</div>
 		</form>
 	</div>
