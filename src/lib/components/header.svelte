@@ -53,7 +53,7 @@
 	}
 
 	$effect(() => {
-		solidBackground = page.route.id != '/' || scrollY > 140 || showNav;
+		solidBackground = page.route.id != '/[[locale]]' || scrollY > 140 || showNav;
 	});
 
 	onMount(() => {
