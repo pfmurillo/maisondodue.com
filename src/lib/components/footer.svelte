@@ -9,13 +9,9 @@
 	import { superForm, filesProxy } from 'sveltekit-superforms';
 	import { zod } from 'sveltekit-superforms/adapters';
 
-	let disabled = $state(true);
 	const { contactForm }: { contactForm: SuperValidated<Infer<ContactSchema>> } = $props();
-	const { form, errors, enhance, validateForm } = superForm(contactForm, {
-		validators: zod(contactSchema),
-		async onChange() {
-			disabled = !(await validateForm()).valid;
-		}
+	const { form, errors, enhance } = superForm(contactForm, {
+		validators: zod(contactSchema)
 	});
 	const files = filesProxy(form, 'images');
 
@@ -31,6 +27,7 @@
 <footer class="bg-spinach-300 p-3 pt-12 text-white">
 	<div class="min-w-1600 m-auto my-12 w-fit">
 		<h2 class="mb-8 text-4xl">{m.known_flat_coyote_walk()}</h2>
+		<p>{m.major_kind_marten_find()}</p>
 		<form class="mb-16" method="POST" enctype="multipart/form-data" action="/contact" use:enhance>
 			<label for="firstname" class="mt-4 block"
 				>{m.glad_awful_cat_laugh()}<span class="ml-1 text-sm">*</span></label
@@ -38,7 +35,7 @@
 			<input
 				type="text"
 				name="firstname"
-				class="block w-full border bg-white px-4 py-2 text-black"
+				class="block w-full border px-4 py-2 text-black"
 				class:bg-red-300={$errors.firstname}
 				bind:value={$form.firstname}
 				aria-invalid={$errors.firstname ? 'true' : undefined}
@@ -49,7 +46,7 @@
 			<input
 				type="text"
 				name="lastname"
-				class="block w-full border bg-white px-4 py-2 text-black"
+				class="block w-full border px-4 py-2 text-black"
 				class:bg-red-300={$errors.lastname}
 				bind:value={$form.lastname}
 				aria-invalid={$errors.lastname ? 'true' : undefined}
@@ -60,21 +57,17 @@
 			<input
 				type="email"
 				name="email"
-				class="block w-full border bg-white px-4 py-2 text-black"
+				class="block w-full border px-4 py-2 text-black"
 				class:bg-red-300={$errors.email}
 				bind:value={$form.email}
 				aria-invalid={$errors.email ? 'true' : undefined}
 			/>
-			<label for="phone" class="mt-4 block"
-				>{m.salty_green_robin_amaze()}<span class="ml-1 text-sm">*</span></label
-			>
+			<label for="phone" class="mt-4 block">{m.salty_green_robin_amaze()}</label>
 			<input
 				type="text"
 				name="phone"
-				class="block w-full border bg-white px-4 py-2 text-black"
-				class:bg-red-300={$errors.phone}
+				class="block w-full border px-4 py-2 text-black"
 				bind:value={$form.phone}
-				aria-invalid={$errors.phone ? 'true' : undefined}
 			/>
 			<label for="message" class="mt-4 block"
 				>{m.odd_sweet_fireant_grace()}<span class="ml-1 text-sm">*</span></label
@@ -82,7 +75,7 @@
 			<textarea
 				name="message"
 				class:bg-red-300={$errors.message}
-				class="block min-h-36 w-full border bg-white px-4 py-2 text-black"
+				class="block min-h-36 w-full border px-4 py-2 text-black"
 				bind:value={$form.message}
 				aria-invalid={$errors.message ? 'true' : undefined}
 			></textarea>
@@ -113,9 +106,7 @@
 				bind:this={fileInput}
 				bind:files={$files}
 			/>
-			<button class="mt-6 w-full bg-white p-3 text-black disabled:opacity-35" {disabled}
-				>{m.mellow_fine_mink_pout()}</button
-			>
+			<button class="mt-6 w-full bg-white p-3 text-black">{m.mellow_fine_mink_pout()}</button>
 			<div class="mt-8 max-w-[400px] text-sm">
 				{m.spry_stock_newt_link()}
 			</div>
