@@ -51,4 +51,7 @@
 	<div>
 		<Image src="/jugaad/07.webp" alt="" />
 	</div>
+	<div>
+		<Image src="/jugaad/09.webp" alt="" />
+	</div>
 </div>

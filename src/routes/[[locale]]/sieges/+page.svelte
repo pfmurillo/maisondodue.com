@@ -11,7 +11,7 @@
 		<Image src="/sieges/01.webp" alt="" />
 	</div>
 	<div
-		class="bg-almond-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 leading-8 text-black md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-almond-500 p-6 leading-8 text-black md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 md:p-12"
 	>
 		{m.slimy_wise_grebe_gasp()}
 	</div>
@@ -19,9 +19,9 @@
 		<Image src="/sieges/02.webp" alt="" />
 	</div>
 	<div><Image src="/sieges/03.webp" alt="" /></div>
-	<div><Image src="/sieges/04.webp" alt="" /></div>
+	<div><Image src="/sieges/11.webp" alt="" /></div>
 	<div
-		class="bg-almond-500 col-start-1 col-end-3 flex items-center rounded-3xl p-6 leading-8 text-black md:p-12"
+		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-almond-500 p-6 leading-8 text-black md:p-12"
 	>
 		{m.key_patchy_dingo_link()}
 	</div>
@@ -30,5 +30,6 @@
 	<div><Image src="/sieges/07.webp" alt="" /></div>
 	<div><Image src="/sieges/08.webp" alt="" /></div>
 	<div><Image src="/sieges/09.webp" alt="" /></div>
+	<div><Image src="/sieges/04.webp" alt="" /></div>
 	<div><Image src="/sieges/10.webp" alt="" /></div>
 </div>
