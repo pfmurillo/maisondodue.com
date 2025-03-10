@@ -4,8 +4,9 @@
 
 	const descriptions = [
 		m.awful_bad_gibbon_bake(),
+		m.quick_aloof_anaconda_reside(),
 		m.top_male_mouse_spin(),
-		m.lazy_petty_goat_gaze(),
+		m.calm_dry_koala_chop(),
 		'Clémence'
 	];
 </script>
