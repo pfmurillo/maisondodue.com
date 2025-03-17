@@ -11,7 +11,8 @@
 
 	const { contactForm }: { contactForm: SuperValidated<Infer<ContactSchema>> } = $props();
 	const { form, errors, enhance } = superForm(contactForm, {
-		validators: zod(contactSchema)
+		validators: zod(contactSchema),
+		scrollToError: 'smooth'
 	});
 	const files = filesProxy(form, 'images');
 
@@ -24,7 +25,7 @@
 	}
 </script>
 
-<footer class="bg-spinach-300 p-3 pt-12 text-white">
+<footer class="bg-curry-500 p-3 pt-12 text-white">
 	<div class="min-w-1600 m-auto my-12 w-fit">
 		<h2 class="mb-8 text-4xl">{m.known_flat_coyote_walk()}</h2>
 		<p>{m.major_kind_marten_find()}</p>

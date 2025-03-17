@@ -13,21 +13,14 @@ export default {
 			},
 			colors: {
 				curry: {
-					300: '#f08700'
+					500: '#ab5c00'
 				},
 				spinach: {
 					500: '#30351c',
 					300: '#828c51'
 				},
-				moka: {
-					500: '#a57865',
-					300: '#ddb892'
-				},
 				champagne: {
 					300: '#fefafc'
-				},
-				cassis: {
-					500: '#cf4f4f'
 				},
 				almond: {
 					500: '#d5bdaf'
