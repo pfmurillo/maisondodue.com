@@ -138,6 +138,10 @@
 		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
 			>Paris 18ème | Saint-Ouen</span
 		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
+			><a class="underline" target="_blank" href="https://www.linkedin.com/company/maison-dodue"
+				>LinkedIn</a
+			></span
+		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
 			><a class="underline" href="/mentions">{m.aqua_gray_penguin_peek()}</a></span
 		><span class="px-2 max-sm:block">
 			{#if languageTag() === 'fr'}
