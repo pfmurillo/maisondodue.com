@@ -30,3 +30,11 @@
 </div>
 
 <Description {descriptions} />
+
+<div class="m-auto flex max-w-screen-lg justify-end px-3 md:px-5">
+	<img
+		src="/home/label-reparacteur.png"
+		alt="Label Réparacteur"
+		class="relative -mt-24 mr-8 w-24 md:w-32"
+	/>
+</div>
