@@ -8,7 +8,7 @@ export const contactSchema = z.object({
 	message: z.string().min(1).max(500),
 	images: z
 		.instanceof(File, { message: 'Please upload a file.' })
-		.refine((f) => f.size < 1_000_000, 'Max 1 Mo upload size.')
+		.refine((f) => f.size < 5_000_000, 'Max 5 Mo upload size.')
 		.array()
 		.max(3)
 });

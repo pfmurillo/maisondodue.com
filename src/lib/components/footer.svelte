@@ -84,7 +84,7 @@
 					aria-invalid={$errors.message ? 'true' : undefined}
 				></textarea>
 				<label for="images" class:bg-red-300={$errors.images} class="mt-4 block"
-					>Images (3 max, .jpg ou .png, 1 Mo max)</label
+					>Images (3 max, .jpg ou .png, 5 Mo max)</label
 				>
 				{#if $errors.images}
 					<p>{m.broad_patient_myna_win()}</p>
