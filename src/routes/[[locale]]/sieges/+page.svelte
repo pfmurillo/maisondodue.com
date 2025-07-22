@@ -13,19 +13,21 @@
 	>
 		{m.slimy_wise_grebe_gasp()}
 	</div>
+	<div><Image src="/sieges/08.webp" alt="" /></div>
 	<div><Image src="/sieges/02.webp" alt="" /></div>
-	<div><Image src="/sieges/03.webp" alt="" /></div>
-	<div><Image src="/sieges/11.webp" alt="" /></div>
+	<div><Image src="/sieges/16.webp" alt="" /></div>
 	<div
 		class="col-start-1 col-end-3 flex items-center rounded-3xl bg-almond-500 p-6 leading-8 text-black md:p-12"
 	>
 		{m.key_patchy_dingo_link()}
 	</div>
-	<div><Image src="/sieges/05.webp" alt="" /></div>
-	<div><Image src="/sieges/06.webp" alt="" /></div>
-	<div><Image src="/sieges/07.webp" alt="" /></div>
-	<div><Image src="/sieges/08.webp" alt="" /></div>
+	<div><Image src="/sieges/15.webp" alt="" /></div>
 	<div><Image src="/sieges/09.webp" alt="" /></div>
 	<div><Image src="/sieges/04.webp" alt="" /></div>
-	<div><Image src="/sieges/10.webp" alt="" /></div>
+	<div><Image src="/sieges/17.webp" alt="" /></div>
+	<div><Image src="/sieges/11.webp" alt="" /></div>
+	<div><Image src="/sieges/03.webp" alt="" /></div>
+	<div><Image src="/sieges/06.webp" alt="" /></div>
+	<div><Image src="/sieges/14.webp" alt="" /></div>
+	<div><Image src="/sieges/13.webp" alt="" /></div>
 </div>
