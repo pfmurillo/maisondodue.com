@@ -9,11 +9,11 @@
 <div class="m-auto mb-14 mt-7 grid max-w-screen-lg grid-cols-2 gap-4 p-3 md:grid-cols-3">
 	<div><Image src="/decor/01.webp" alt="" /></div>
 	<div><Image src="/decor/02.webp" alt="" /></div>
-	<div><Image src="/decor/03.webp" alt="" /></div>
+	<div><Image src="/decor/07.webp" alt="" /></div>
 	<div><Image src="/decor/04.webp" alt="" /></div>
 	<div><Image src="/decor/05.webp" alt="" /></div>
 	<div
-		class="bg-almond-500 col-start-1 col-end-3 row-start-2 row-end-3 flex items-center rounded-3xl p-6 leading-8 text-black md:p-12"
+		class="col-start-1 col-end-3 row-start-2 row-end-3 flex items-center rounded-3xl bg-almond-500 p-6 leading-8 text-black md:p-12"
 	>
 		{m.fit_less_wallaby_trust()}
 	</div>
