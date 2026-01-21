@@ -33,7 +33,7 @@
 		{:else}
 			<p>{m.major_kind_marten_find()}</p>
 			<form
-				class="w-lg mb-16 block bg-green-200"
+				class="w-lg mb-16 block max-w-96"
 				method="POST"
 				enctype="multipart/form-data"
 				action="/contact"
@@ -95,13 +95,15 @@
 				{#if $errors.images}
 					<p>{m.broad_patient_myna_win()}</p>
 				{/if}
-				<div class="grid grid-cols-3 gap-2 bg-pink-200">
+				<div class="grid grid-cols-3 gap-2">
 					{#each $form.images as image}
-						<img
-							src={URL.createObjectURL(image)}
-							alt={image.name}
-							class="my-4 aspect-square basis-1/4 rounded-2xl object-cover"
-						/>
+						<div class="my-2 aspect-square">
+							<img
+								src={URL.createObjectURL(image)}
+								alt={image.name}
+								class="h-full w-full rounded-2xl object-cover"
+							/>
+						</div>
 					{/each}
 				</div>
 				<button
