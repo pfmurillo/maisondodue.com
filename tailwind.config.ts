@@ -24,6 +24,10 @@ export default {
 				},
 				almond: {
 					500: '#d5bdaf'
+				},
+				sky: {
+					300: '#ade8f4',
+					500: '#03045e'
 				}
 			}
 		}
