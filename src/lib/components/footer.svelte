@@ -25,21 +25,27 @@
 	}
 </script>
 
-<footer class="bg-curry-500 p-3 pt-12 text-white">
+<footer class="bg-sky-300 p-3 pt-12 text-sky-500">
 	<div class="min-w-1600 m-auto my-12 w-fit">
 		<h2 class="mb-8 text-4xl">{m.known_flat_coyote_walk()}</h2>
 		{#if $message}
 			<p>{m.inner_bold_niklas_rise()}</p>
 		{:else}
 			<p>{m.major_kind_marten_find()}</p>
-			<form class="mb-16" method="POST" enctype="multipart/form-data" action="/contact" use:enhance>
-				<label for="firstname" class="mt-4 block"
+			<form
+				class="w-lg mb-16 block bg-green-200"
+				method="POST"
+				enctype="multipart/form-data"
+				action="/contact"
+				use:enhance
+			>
+				<label for="firstname" class="mt-4 block w-full"
 					>{m.glad_awful_cat_laugh()}<span class="ml-1 text-sm">*</span></label
 				>
 				<input
 					type="text"
 					name="firstname"
-					class="block w-full rounded-2xl border px-4 py-2 text-black"
+					class="block w-full rounded-2xl border px-4 py-2"
 					class:bg-red-300={$errors.firstname}
 					bind:value={$form.firstname}
 					aria-invalid={$errors.firstname ? 'true' : undefined}
@@ -50,7 +56,7 @@
 				<input
 					type="text"
 					name="lastname"
-					class="block w-full rounded-2xl border px-4 py-2 text-black"
+					class="block w-full rounded-2xl border px-4 py-2"
 					class:bg-red-300={$errors.lastname}
 					bind:value={$form.lastname}
 					aria-invalid={$errors.lastname ? 'true' : undefined}
@@ -61,7 +67,7 @@
 				<input
 					type="email"
 					name="email"
-					class="block w-full rounded-2xl border px-4 py-2 text-black"
+					class="block w-full rounded-2xl border px-4 py-2"
 					class:bg-red-300={$errors.email}
 					bind:value={$form.email}
 					aria-invalid={$errors.email ? 'true' : undefined}
@@ -70,7 +76,7 @@
 				<input
 					type="text"
 					name="phone"
-					class="block w-full rounded-2xl border px-4 py-2 text-black"
+					class="block w-full rounded-2xl border px-4 py-2"
 					bind:value={$form.phone}
 				/>
 				<label for="message" class="mt-4 block"
@@ -79,7 +85,7 @@
 				<textarea
 					name="message"
 					class:bg-red-300={$errors.message}
-					class="block min-h-36 w-full rounded-2xl border px-4 py-2 text-black"
+					class="block min-h-36 w-full rounded-2xl border px-4 py-2"
 					bind:value={$form.message}
 					aria-invalid={$errors.message ? 'true' : undefined}
 				></textarea>
@@ -89,12 +95,12 @@
 				{#if $errors.images}
 					<p>{m.broad_patient_myna_win()}</p>
 				{/if}
-				<div class="flex">
+				<div class="grid grid-cols-3 gap-2 bg-pink-200">
 					{#each $form.images as image}
 						<img
 							src={URL.createObjectURL(image)}
 							alt={image.name}
-							class="my-4 block aspect-square h-40 max-w-[33%] object-cover"
+							class="my-4 aspect-square basis-1/4 rounded-2xl object-cover"
 						/>
 					{/each}
 				</div>
@@ -103,7 +109,7 @@
 						e.preventDefault();
 						fileInput.click();
 					}}
-					class="flex w-full items-center justify-center rounded-2xl border bg-white py-3 text-black"
+					class="flex w-full items-center justify-center rounded-2xl border bg-white py-3"
 					>{m.tasty_many_ladybug_learn()}</button
 				>
 				<input
@@ -118,7 +124,7 @@
 				<button
 					disabled={$submitting}
 					class:opacity-50={$submitting}
-					class="mt-6 w-full rounded-2xl bg-white p-3 text-black"
+					class="mt-6 w-full rounded-2xl bg-white p-3"
 				>
 					{#if $submitting}
 						{m.knotty_still_earthworm_trust()}
