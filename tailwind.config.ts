@@ -26,7 +26,7 @@ export default {
 					500: '#d5bdaf'
 				},
 				sky: {
-					300: '#ade8f4',
+					300: '#a6c6ed',
 					500: '#03045e'
 				}
 			}
