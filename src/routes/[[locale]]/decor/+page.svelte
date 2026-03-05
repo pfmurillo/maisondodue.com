@@ -8,8 +8,9 @@
 
 <div class="m-auto mb-14 mt-7 grid max-w-screen-lg grid-cols-2 gap-4 p-3 md:grid-cols-3">
 	<div><Image src="/decor/08.webp" alt="" /></div>
-	<div><Image src="/decor/02.webp" alt="" /></div>
+	<!-- <div><Image src="/decor/02.webp" alt="" /></div> -->
 	<div><Image src="/decor/07.webp" alt="" /></div>
+	<div><Image src="/decor/10.webp" alt="" /></div>
 	<div><Image src="/decor/04.webp" alt="" /></div>
 	<div><Image src="/decor/05.webp" alt="" /></div>
 	<div
@@ -18,4 +19,5 @@
 		{m.fit_less_wallaby_trust()}
 	</div>
 	<div><Image src="/decor/06.webp" alt="" /></div>
+	<div><Image src="/decor/09.webp" alt="" /></div>
 </div>
