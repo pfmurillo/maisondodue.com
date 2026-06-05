@@ -142,7 +142,7 @@
 	</div>
 	<div class="m-auto mb-12 mt-12 w-fit text-center">
 		<span class="px-2 md:after:pl-4 md:after:content-['•'] md:max-sm:block"
-			>2023-2025 Maison Dodue</span
+			>2023-2026 Maison Dodue</span
 		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
 			>Paris 18ème | Saint-Ouen</span
 		><span class="px-2 max-sm:block md:after:pl-4 md:after:content-['•']"
