@@ -2,8 +2,19 @@ import { message, superValidate, withFiles } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
 import { fail } from '@sveltejs/kit';
 import { contactSchema } from '$lib/schemas.js';
-import { MAILER_USER, MAILER_PASS, MAILER_HOST, MAILER_SUBJECT } from '$env/static/private';
+import { MAILER_USER, MAILER_PASS, MAILER_HOST } from '$env/static/private';
 import NodeMailer from 'nodemailer';
+
+// Les champs saisis sont insérés dans le HTML de l'email : on les échappe.
+function escapeHtml(text: string) {
+	return text
+		.replaceAll('&', '&amp;')
+		.replaceAll('<', '&lt;')
+		.replaceAll('>', '&gt;')
+		.replaceAll('"', '&quot;')
+		.replaceAll("'", '&#39;')
+		.replaceAll('\n', '<br />');
+}
 
 interface Attachment {
 	content: string;
@@ -42,24 +53,30 @@ export const actions = {
 
 			const attachments = await setAttachments(form.data.images);
 
+			const { firstname, lastname, email, phone, title, message: description } = form.data;
 			const html =
-				`<b>Prénom</b> : ${form.data.firstname} <br />` +
-				`<b>Nom</b> : ${form.data.lastname} <br />` +
-				`<b>Email</b> : ${form.data.email} <br />` +
-				`<b>Téléphone</b> : ${form.data.phone} <br />` +
-				`<b>Message</b> : ${form.data.message} <br />`;
+				`<b>Prénom</b> : ${escapeHtml(firstname)} <br />` +
+				`<b>Nom</b> : ${escapeHtml(lastname)} <br />` +
+				`<b>Email</b> : ${escapeHtml(email)} <br />` +
+				`<b>Téléphone</b> : ${escapeHtml(phone)} <br />` +
+				`<b>Projet</b> : ${escapeHtml(title)} <br />` +
+				`<b>Description</b> : ${escapeHtml(description)} <br />`;
 
 			await transporter.sendMail({
 				from: MAILER_USER,
 				to: MAILER_USER,
-				subject: MAILER_SUBJECT,
+				replyTo: {
+					name: `${form.data.firstname} ${form.data.lastname}`,
+					address: form.data.email
+				},
+				subject: title,
 				html,
 				attachments
 			});
-			return message(form, 'Message sent');
+			return message(form, 'sent');
 		} catch (error) {
-			console.log(error);
-			return fail(400, { form });
+			console.error(error);
+			return message(form, 'error', { status: 500 });
 		}
 	}
 };
