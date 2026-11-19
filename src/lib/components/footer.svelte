@@ -123,12 +123,16 @@
 						bind:value={$form.email}
 						aria-invalid={$errors.email ? 'true' : undefined}
 					/>
-					<label for="phone" class="mt-4 block">{m.salty_green_robin_amaze()}</label>
+					<label for="phone" class="mt-4 block"
+						>{m.salty_green_robin_amaze()}<span class="ml-1 text-sm">*</span></label
+					>
 					<input
-						type="text"
+						type="tel"
 						name="phone"
 						class="block w-full rounded-2xl border px-4 py-2"
+						class:bg-red-300={$errors.phone}
 						bind:value={$form.phone}
+						aria-invalid={$errors.phone ? 'true' : undefined}
 					/>
 					<label for="title" class="mt-4 block"
 						>{m.contact_project_title()}<span class="ml-1 text-sm">*</span></label

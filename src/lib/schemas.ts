@@ -10,7 +10,7 @@ export const contactSchema = z.object({
 	firstname: z.string().min(1),
 	lastname: z.string().min(1),
 	email: z.string().email(),
-	phone: z.string(),
+	phone: z.string().trim().min(1),
 	title: z.string().trim().min(1).max(150),
 	message: z.string().min(1).max(500),
 	images: z
